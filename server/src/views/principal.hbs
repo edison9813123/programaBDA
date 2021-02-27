@@ -1,0 +1,27 @@
+<form action="/transaccion"></form>
+
+    <h1>Transaccion Bancaria</h1>
+    
+    <label for=""id="lblEdad">cuenta a debitar </label><br>
+    <select name="" id="">
+        {{#each consulta}}
+        <option value="{{this.n_cuenta}}">{{this.n_cuenta}}</option>
+        {{/each}}
+    </select>
+    <label for=""id="lblEdad">cuenta a creditar </label><br>
+    <select name="n_cuenta" id="">
+        {{#each consulta}}
+        <option value="{{this.n_cuenta}}">{{n_cuenta}}</option>
+        {{/each}}
+    </select>
+    <label for=""id="lblEdad">saldo a transferir </label><br>
+    <input type="text" id="text"><br>
+    <label for=""id="lblEdad">saldo</label><br>
+    <input type="text" id="text"><br>
+    <label for=""id="lblEdad">saldo</label><br>
+    <input type="text" id="text"><br><br>
+    <button onclick="mover">tranferir</button>
+    {{#each consulta}}
+    <p>a{{n_cuenta}}</p>
+    {{/each}}
+
